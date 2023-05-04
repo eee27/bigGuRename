@@ -7,41 +7,32 @@
         <HorizontalStackLayout
             Spacing="25"
             Padding="30,0"
-            HorizontalOptions="Center"
-            >
-            
-        <VerticalStackLayout
+            HorizontalOptions="Center">
+
+            <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
 
-            <Image
+                <Image
                 Source="dotnet_bot.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
 
-            <Label
+                <Label
                 Text="面对现实器!"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
                 HorizontalOptions="Center" />
 
-            <Label
+                <Label
                 Text="选中文件所在的路径,然后选择要生成文件的起始日期和结束日期,点面对现实!"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 FontSize="18"
                 HorizontalOptions="Center" />
-
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
-        </VerticalStackLayout>
+            </VerticalStackLayout>
 
             <VerticalStackLayout
             Spacing="25"
@@ -50,40 +41,32 @@
 
                 <Label
                 Text="把那几个原始文件放到下面的路径里"
-                HorizontalOptions="Start" 
-                />
-                <Entry x:Name="originFilePath" Text="D:/daGuMission/" IsReadOnly="True"/>
+                HorizontalOptions="Start" />
+                <Entry x:Name="originFilePath" Text="D:/daGuMission/" IsReadOnly="True" />
 
                 <Label
-                Text="下面输入原始文件的日期,例如20210111"
-                HorizontalOptions="Start" 
-                />
-                <Entry x:Name="originDate" Keyboard="Numeric" TextChanged="OnNumTextChanged"/>
+                Text="下面输入原始文件的日期,例如20210101"
+                HorizontalOptions="Start" />
+                <Entry x:Name="originDate" Keyboard="Numeric" TextChanged="OnNumTextChanged" />
 
                 <Label
                 Text="下面输入要生成的最早日期,例如20230111"
-                HorizontalOptions="Start" 
-                />
-                <Entry x:Name="targetStartDate" Keyboard="Numeric" TextChanged="OnNumTextChanged"/>
+                HorizontalOptions="Start" />
+                <Entry x:Name="targetStartDate" Keyboard="Numeric" TextChanged="OnNumTextChanged" />
 
                 <Label
                 Text="下面输入要生成的最晚日期,例如20230428"
-                HorizontalOptions="Start" 
-                />
-                <Entry x:Name="targetEndDate" Keyboard="Numeric" TextChanged="OnNumTextChanged"/>
-
+                HorizontalOptions="Start" />
+                <Entry x:Name="targetEndDate" Keyboard="Numeric" TextChanged="OnNumTextChanged" />
 
                 <Button
                 x:Name="targetBtn"
                 Text="面对现实!"
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnTargetClicked"
-                HorizontalOptions="Center" >
+                HorizontalOptions="Center">
                 </Button>
-
             </VerticalStackLayout>
-
         </HorizontalStackLayout>
     </ScrollView>
-
 </ContentPage>
